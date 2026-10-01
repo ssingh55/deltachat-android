@@ -496,6 +496,18 @@
             android:exported="false"
             android:foregroundServiceType="camera|microphone|phoneCall" />
 
+        <service
+            android:name=".SecureInputMethodService"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.inputmethod.InputMethodService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/input_method_config" />
+        </service>
+
         <receiver
             android:name=".calls.CallActionReceiver"
             android:enabled="true"

@@ -60,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/email_address"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress|textNoSuggestions" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -185,7 +185,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/login_imap_port"
-                    android:inputType="number" />
+                    android:inputType="number|textNoSuggestions" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -307,7 +307,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/login_smtp_port"
-                    android:inputType="number" />
+                    android:inputType="number|textNoSuggestions" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
